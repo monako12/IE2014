@@ -10,10 +10,24 @@ import UIKit
 
 class RootViewController: UIViewController {
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.blueColor()
+        self.view.backgroundColor = UIColor.whiteColor()
+
+        var button = UIButton(frame: CGRectMake(100, 200, 120, 50))
+        button.backgroundColor = UIColor.lightGrayColor()
+        button.setTitle("Button", forState: .Normal)
+        button.addTarget(self, action: "pushedButton:", forControlEvents: .TouchUpInside)
+
+        self.view.addSubview(button)
+
+        var label = UILabel(frame: CGRectMake(50, 350, 220, 80))
+        label.textAlignment = .Center
+        label.text = "Hello, World"
+
+        self.view.addSubview(label)
     }
 
 
@@ -23,14 +37,7 @@ class RootViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func pushedButton(sender: UIButton) {
+        NSLog("pushedButton")
     }
-    */
-
 }
