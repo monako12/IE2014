@@ -11,6 +11,9 @@ import UIKit
 class RootViewController: UIViewController {
 
 
+    var label : UILabel?
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,11 +26,11 @@ class RootViewController: UIViewController {
 
         self.view.addSubview(button)
 
-        var label = UILabel(frame: CGRectMake(50, 350, 220, 80))
-        label.textAlignment = .Center
-        label.text = "Hello, World"
+        self.label = UILabel(frame: CGRectMake(50, 350, 220, 80))
+        self.label!.textAlignment = .Center
+        self.label!.text = "Hello, World"
 
-        self.view.addSubview(label)
+        self.view.addSubview(self.label!)
     }
 
 
@@ -38,6 +41,6 @@ class RootViewController: UIViewController {
     
 
     func pushedButton(sender: UIButton) {
-        NSLog("pushedButton")
+        self.label!.text = "Push"
     }
 }
