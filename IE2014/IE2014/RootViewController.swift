@@ -19,12 +19,19 @@ class RootViewController: UIViewController {
 
         self.view.backgroundColor = UIColor.whiteColor()
 
-        var button = UIButton(frame: CGRectMake(100, 200, 120, 50))
-        button.backgroundColor = UIColor.lightGrayColor()
-        button.setTitle("Button", forState: .Normal)
-        button.addTarget(self, action: "pushedButton:", forControlEvents: .TouchUpInside)
+        var button1 = UIButton(frame: CGRectMake(100, 100, 120, 50))
+        button1.backgroundColor = UIColor.lightGrayColor()
+        button1.setTitle("Button1", forState: .Normal)
+        button1.addTarget(self, action: "pushedButton1:", forControlEvents: .TouchUpInside)
 
-        self.view.addSubview(button)
+        self.view.addSubview(button1)
+
+        var button2 = UIButton(frame: CGRectMake(100, 170, 120, 50))
+        button2.backgroundColor = UIColor.lightGrayColor()
+        button2.setTitle("Button2", forState: .Normal)
+        button2.addTarget(self, action: "pushedButton2:", forControlEvents: .TouchUpInside)
+
+        self.view.addSubview(button2)
 
         self.label = UILabel(frame: CGRectMake(50, 350, 220, 80))
         self.label!.textAlignment = .Center
@@ -38,9 +45,14 @@ class RootViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+     
 
-    func pushedButton(sender: UIButton) {
-        self.label!.text = "Push"
+    func pushedButton1(sender: UIButton) {
+        self.label!.text = "Button1"
+    }
+
+
+    func pushedButton2(sender: UIButton) {
+        self.label!.text = "Button2"
     }
 }
