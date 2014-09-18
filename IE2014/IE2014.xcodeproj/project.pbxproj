@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A29069B119CA5D02005A9D07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29069B019CA5D02005A9D07 /* AVFoundation.framework */; };
 		A2A199B019C53A1B00409EC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A199AF19C53A1B00409EC4 /* AppDelegate.swift */; };
 		A2A199B719C53A1B00409EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A199B619C53A1B00409EC4 /* Images.xcassets */; };
 		A2A199C619C53A1B00409EC4 /* IE2014Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A199C519C53A1B00409EC4 /* IE2014Tests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A29069B019CA5D02005A9D07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A2A199AA19C53A1B00409EC4 /* IE2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IE2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A199AE19C53A1B00409EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2A199AF19C53A1B00409EC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29069B119CA5D02005A9D07 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +58,7 @@
 		A2A199A119C53A1B00409EC4 = {
 			isa = PBXGroup;
 			children = (
+				A29069B019CA5D02005A9D07 /* AVFoundation.framework */,
 				A2A199AC19C53A1B00409EC4 /* IE2014 */,
 				A2A199C219C53A1B00409EC4 /* IE2014Tests */,
 				A2A199AB19C53A1B00409EC4 /* Products */,
@@ -378,6 +382,7 @@
 				A2A199CB19C53A1B00409EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2A199CC19C53A1B00409EC4 /* Build configuration list for PBXNativeTarget "IE2014Tests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +391,7 @@
 				A2A199CE19C53A1B00409EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
