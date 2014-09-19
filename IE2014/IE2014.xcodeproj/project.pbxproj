@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A28A356519CB9A8A008FF44E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A28A356319CB9A8A008FF44E /* play.png */; };
+		A28A356619CB9A8A008FF44E /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A28A356419CB9A8A008FF44E /* stop.png */; };
+		A28A356919CB9A92008FF44E /* 炎のファイター　アントニオ猪木.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A28A356819CB9A92008FF44E /* 炎のファイター　アントニオ猪木.mp3 */; };
 		A29069B119CA5D02005A9D07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29069B019CA5D02005A9D07 /* AVFoundation.framework */; };
 		A2A199B019C53A1B00409EC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A199AF19C53A1B00409EC4 /* AppDelegate.swift */; };
 		A2A199B719C53A1B00409EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A199B619C53A1B00409EC4 /* Images.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A28A356319CB9A8A008FF44E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A28A356419CB9A8A008FF44E /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		A28A356819CB9A92008FF44E /* 炎のファイター　アントニオ猪木.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "炎のファイター　アントニオ猪木.mp3"; sourceTree = "<group>"; };
 		A29069B019CA5D02005A9D07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A2A199AA19C53A1B00409EC4 /* IE2014.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IE2014.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A199AE19C53A1B00409EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A28A356219CB9A8A008FF44E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A28A356319CB9A8A008FF44E /* play.png */,
+				A28A356419CB9A8A008FF44E /* stop.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A28A356719CB9A92008FF44E /* musics */ = {
+			isa = PBXGroup;
+			children = (
+				A28A356819CB9A92008FF44E /* 炎のファイター　アントニオ猪木.mp3 */,
+			);
+			path = musics;
+			sourceTree = "<group>";
+		};
 		A2A199A119C53A1B00409EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +100,8 @@
 		A2A199AC19C53A1B00409EC4 /* IE2014 */ = {
 			isa = PBXGroup;
 			children = (
+				A28A356719CB9A92008FF44E /* musics */,
+				A28A356219CB9A8A008FF44E /* images */,
 				A2A199AF19C53A1B00409EC4 /* AppDelegate.swift */,
 				A2A199B619C53A1B00409EC4 /* Images.xcassets */,
 				A2A199AD19C53A1B00409EC4 /* Supporting Files */,
@@ -191,6 +216,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A199B719C53A1B00409EC4 /* Images.xcassets in Resources */,
+				A28A356519CB9A8A008FF44E /* play.png in Resources */,
+				A28A356919CB9A92008FF44E /* 炎のファイター　アントニオ猪木.mp3 in Resources */,
+				A28A356619CB9A8A008FF44E /* stop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
