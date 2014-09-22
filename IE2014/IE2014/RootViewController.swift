@@ -12,11 +12,22 @@ import UIKit
 class RootViewController: UIViewController {
 
 
+    var rapBackgroundView : RapBackgroundView?
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.whiteColor()
 
+        var img : UIImage = UIImage(named: "rapBase.jpg")
+        var imgView : UIImageView = UIImageView(image: img)
+        imgView.frame = self.view.frame
+        self.view.addSubview(imgView)
+      
+        var rapManager : RapManager = RapManager.getRapManager()
+        rapManager.setView(self.view)
+        rapManager.prepare()
     }
 
 
